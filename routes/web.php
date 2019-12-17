@@ -16,3 +16,6 @@
 // });
 
 Route::get('/', 'AuctionController@index')->name('Auction');
+Route::put('/Auction/update/{id}', 'AuctionController@update')->name('Auction.update');
+Route::get('/{id}', 'AuctionController@Searchindex')->name('SearchAuction');
+Route::get('/Report/ReportAuction/{id}', 'AuctionController@ReportAuction')->name('ReportAuction');
